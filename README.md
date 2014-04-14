@@ -11,3 +11,11 @@ Create action/trigger (cause/effect) pairs, linked events (quests, stories) easi
 3. call EventsEngine.checkEvents in your game update() method. 
 
 Want more details? Check out [__example__.py](https://github.com/7yl4r/eventsEngine/blob/master/__example__.py).
+
+### Concepts ###
+* Action  = any arbitrary code
+* Trigger = a conditional that causes an action
+* Event = a trigger->action pair
+* Story = a linear series of Events that happen chronologically
+* Node = an event with multiple triggers which lead to different actions
+* Tree = a Story made up of Nodes
