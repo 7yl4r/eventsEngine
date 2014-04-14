@@ -6,6 +6,7 @@ Think of it like a giant game container in which everything goes.
 from Event import Event
 from Action import Action
 from Trigger import Trigger
+from Story import Story
 
 class EventsEngine(object):
     def __init__(self, eventList=None):

@@ -39,5 +39,12 @@ class Trigger(object):
         self.obj = o
     def __call__(self):
         o = self.obj
-        return eval(self.criteria)
-      
+        try:
+            return eval(self.criteria)
+        except AttributeError as E: # (problems with o in criteria)
+            print '\n\nERR: trigger cannot resolve your reference. Did you pass the right o object?'\
+                 +'\n\tyour evalStr syntax:'\
+                 +'\n\t'+self.criteria\
+                 +'\n\to = '+str(o)\
+                 +'\n\n'
+            raise E
