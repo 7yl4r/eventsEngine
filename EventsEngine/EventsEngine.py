@@ -3,9 +3,9 @@ This class defines the object which holds all game information.
 Think of it like a giant game container in which everything goes.
 '''
 
-from event.Event import Event
-from event.Action import Action
-from event.Trigger import Trigger
+from Event import Event
+from Action import Action
+from Trigger import Trigger
 
 class EventsEngine(object):
     def __init__(self, eventList=None):
