@@ -1,5 +1,7 @@
 ''' 
 Trigger class for events. 
+
+Triggers are evaluated in order to determine if it is appropriate to activate the action of an event.
 '''
 from datetime import datetime
 
