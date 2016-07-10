@@ -1,5 +1,7 @@
 ''' 
 Action class for events. 
+
+The action of an event contains what code is executed when an event is triggered.
 '''
 
 #from lib.colorama import Fore
